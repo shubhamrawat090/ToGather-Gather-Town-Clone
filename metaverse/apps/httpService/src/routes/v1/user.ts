@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-const userRouter = Router();
+export const userRouter = Router();
 
 userRouter.get("/signin", (req, res) => {
   res.json({
@@ -17,4 +17,3 @@ userRouter.get("/signup", (req, res) => {
 userRouter.post("/metadata", (req, res) => {});
 
 userRouter.get("/metadata/bulk", (req, res) => {});
-
