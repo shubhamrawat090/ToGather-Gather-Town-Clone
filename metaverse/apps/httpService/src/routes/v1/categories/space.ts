@@ -1,5 +1,4 @@
 import { Router } from "express";
-import SpaceLogicController from "../../logics/space.logic";
 
 export const spaceRouter = Router();
 
