@@ -9,7 +9,9 @@ export const SignupSchema = z.object({
       /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
       "Password must contain at least one letter, one number, and one special character"
     ),
-  type: z.enum(["user", "admin"]),
+  type: z.enum(["user", "admin"], {
+    errorMap: () => ({ message: "Type must be either 'user' or 'admin'" }),
+  }),
 });
 
 export const SigninSchema = z.object({

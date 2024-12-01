@@ -1,6 +1,7 @@
 import express from "express";
 import { router as v1Router } from "./routes/v1";
-import client from "@repo/db/client";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;

@@ -1,6 +1,8 @@
 import { SafeParseError } from "zod";
 
 class ZodValidationService {
+  constructor() {}
+
   getErrorMessageFromParsedData(
     parsedData: SafeParseError<any>,
     defaultMessage = "Verification Failed"
